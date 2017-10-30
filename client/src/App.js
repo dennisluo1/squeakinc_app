@@ -1,19 +1,35 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { Redirect } from 'react-router';
+
+
+
+
+// Componenets
+import Home from './components/Home'
+
 
 class App extends Component {
+
+  // pulled redirect from my project 3
+  handleRedirect = (path) => {
+    this.setState({
+      redirect: true,
+      redirecting: path,
+    })
+    console.log(`The path is: ` + path)
+
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <Router>
+        <div className="app">
+          <Route exact path="/" render={ () => <Home handleRedirect={this.handleRedirect}/>}/>
+        </div>
+      </Router>
     );
   }
 }
