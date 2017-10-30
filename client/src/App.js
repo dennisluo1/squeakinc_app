@@ -27,6 +27,13 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <header>
+                <img className='logo' src="./images/logo.png" alt=""/>
+                <div className='companyName'>
+                    <h1>SQUEAK Inc.</h1>
+                </div>
+                <i className="fa fa-bars fa-2x" aria-hidden="true"></i> 
+            </header>
           <Route exact path="/" render={ () => <Home handleRedirect={this.handleRedirect}/>}/>
           <footer>
             SQUEAK Inc.
@@ -35,9 +42,8 @@ class App extends Component {
               <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
               <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
               <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
-
-
             </div>
+            
           </footer>
         </div>
       </Router>

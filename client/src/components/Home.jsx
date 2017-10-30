@@ -15,15 +15,6 @@ class Home extends Component{
     render(){
         return (
             <div>
-                <div className='top'>
-
-                    <img className='logo' src="./images/logo.png" alt=""/>
-                    <div className='companyName'>
-                        <h1>SQUEAK Inc.</h1>
-                    </div>
-                    <i className="fa fa-bars fa-2x" aria-hidden="true"></i> 
-                </div>
-
                 <section className='heroSection'></section>
                 <section className='whatWeDoSection'>
                     <h1>What we do</h1>
