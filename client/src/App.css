@@ -1,3 +1,29 @@
+/*tags*/
+footer{
+  background-color: black;
+  color: white;
+  font-size: 30px;
+
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: column;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+
+  height: 30vh;
+}
+
+
+
+/*classes*/
 .App {
   text-align: center;
 }
@@ -20,6 +46,59 @@
 
 .App-intro {
   font-size: large;
+}
+
+
+.top{
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row-reverse;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+}
+.companyName{
+  width: 70px;
+  text-align: left;
+  /*font-size: 30px;*/
+}
+.heroSection{
+  width: 100vw;
+  height: 80vh;
+}
+
+
+.logo{
+  width: 100px;
+  height: 100px;
+}
+
+.contactIcons{
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+}
+.contactIcons::after{
+  width:100px;
+  background-color: grey;
 }
 
 @keyframes App-logo-spin {
