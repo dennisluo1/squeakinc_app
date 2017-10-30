@@ -108,10 +108,16 @@ h3{
 	flex-wrap: auto;
   order: auto;
 }
-.contactIcons::after{
-  width:100px;
+
+
+
+.menu{
   background-color: grey;
+  height: 200px;
+  z-index: 3;
 }
+
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
