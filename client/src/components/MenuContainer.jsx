@@ -30,8 +30,23 @@ class MenuContainer extends Component{
         }
     }
 
+    toggleHTMLBackground = () => {
+        let app = document.querySelector('.App');
+        console.log(app.style.backgroundColor)
+        if(!app.style.filter){
+            // html.style.backgroundColor = 'rgba(128, 128, 128, .8)'
+            app.style.filter= 'blur(5px)'
+        }
+        else{
+            app.style.filter=''
+        }
+        
+    }
+
     handleMenu = (e) => {
         console.log('clicked')
+        this.toggleHTMLBackground()
+        
         this.setState({
             show: !this.state.show
         })

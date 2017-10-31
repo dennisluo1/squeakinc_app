@@ -1,4 +1,8 @@
 /*tags*/
+
+html{
+  
+}
 header{
   justify-content: space-around;
   align-items: center;
@@ -77,9 +81,10 @@ h3{
 
 
 .companyName{
-  width: 40%;
   text-align: left;
-  /*font-size: 30px;*/
+}
+.companyName > h1{
+  margin: 0px;
 }
 .heroSection{
   width: 100vw;
@@ -116,7 +121,9 @@ h3{
 .menu{
   position: fixed;
 }
-
+.menuContainer{
+  filter: none;
+}
 
 
 @keyframes App-logo-spin {

@@ -30,17 +30,21 @@ class App extends Component {
 
   render() {
     return (
-      
-      <Router>
+      <div>
+        <header>
+            <img className='logo' src="./images/logo.png" alt=""/>
+            <div className='companyName'>
+                <h1>SQUEAK</h1>
+                <h1>Inc.</h1>
+            </div>
+            <MenuContainer/>
+        </header>
+
+
+        <Router>
         <div className="App">
         
-          <header>
-                <img className='logo' src="./images/logo.png" alt=""/>
-                <div className='companyName'>
-                    <h1>SQUEAK Inc.</h1>
-                </div>
-                <MenuContainer/>
-            </header>
+          
           <Route exact path="/" render={ () => <Home handleRedirect={this.handleRedirect}/>}/>
           <footer>
             SQUEAK Inc.
@@ -54,6 +58,7 @@ class App extends Component {
           </footer>
         </div>
       </Router>
+      </div>
     );
   }
 }
