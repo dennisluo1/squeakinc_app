@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import { slide as Menu } from 'react-burger-menu'
+import { Link } from 'react-router-dom'
 
 class MenuCategories extends Component{
     constructor(){
@@ -10,14 +11,13 @@ class MenuCategories extends Component{
     }
 
     render(){
-        console.log('menu categories');
-        console.log(this.props.categories)
         return(
-            <ul>
+            <div>
                 {this.props.categories.map(function(category){
-                    return (<li>{category}</li>)
+                    // return (<h3 className='category'><Link to={`/${category}`}>{category}</Link></h3>)
+                    return (<h3 className='category'>{category}</h3>)
                 })}
-            </ul>
+            </div>
         )
     }
 }
@@ -35,10 +35,9 @@ class Menu extends Component{
     render(){
 
         if(this.props.show){
-            console.log('menu');
-            console.log(this.props.categories)
             return(
-                <div className='menu'>   
+                <div className='menu'>  
+
                     <MenuCategories categories={this.props.categories} />
                 </div>
             )
@@ -57,19 +56,23 @@ class MenuContainer extends Component{
 
     toggleHTMLBackground = () => {
         let app = document.querySelector('.App');
+        let body=document.querySelector('body')
         console.log(app.style.backgroundColor)
         if(!app.style.filter){
             // html.style.backgroundColor = 'rgba(128, 128, 128, .8)'
             app.style.filter= 'blur(5px)'
+            body.addEventListener('onClick', this.toggleHTMLBackground)
+            console.log('added event')
         }
         else{
             app.style.filter=''
+            body.removeEventListener('onClick', this.toggleHTMLBackground, false)
+            console.log('removed event')
         }
         
     }
 
     handleMenu = (e) => {
-        console.log('clicked')
         this.toggleHTMLBackground()
         
         this.setState({
@@ -80,8 +83,6 @@ class MenuContainer extends Component{
 
 
     render(){
-        console.log('menucontainer');
-        console.log(this.props.categories)
         return(
             <div className='menuContainer'>
                 <i onClick={(e) => {this.handleMenu(e)}} className="fa fa-bars fa-2x" aria-hidden="true"></i> 

@@ -47,14 +47,16 @@ class App extends Component {
           
           <Route exact path="/" render={ () => <Home handleRedirect={this.handleRedirect}/>}/>
           <footer>
-            SQUEAK Inc.
+            <h2>SQUEAK Inc.</h2>
             <div className='contactIcons'>
               <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
               <i className="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
               <i className="fa fa-instagram fa-2x" aria-hidden="true"></i>
               <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
             </div>
-            
+            <div className='footerDivider'/>
+            <h2>Privacy</h2>
+            <h2>Contact</h2>
           </footer>
         </div>
       </Router>

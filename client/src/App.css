@@ -37,8 +37,11 @@ footer{
 	flex-wrap: auto;
   order: auto;
 
-  height: 30vh;
+  /* height: 30vh; */
 }
+/* footer:nth-child(1n){
+  margin: 20px 0 20px 0;  
+} */
 
 
 h1{
@@ -53,6 +56,7 @@ h3{
 ul{
   list-style: none;
 }
+
 
 
 /*classes*/
@@ -122,13 +126,26 @@ ul{
 
 .menu{
   position: absolute;
-  background-color: grey;
+  background-color: #d2bba0;
   animation-duration: 1s;
   animation-name: slidein;
+  text-align: center;
+  z-index: 2;
 }
 .menuContainer{
   filter: none;
   width: 100px;
+}
+
+.footerDivider{
+  width: 90vw; 
+  height: 4px;
+  background-color: grey;
+  margin: 20px 0 20px 0;    
+}
+
+.category:hover{
+  background-color: #f2efc7;
 }
 
 
