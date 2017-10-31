@@ -50,7 +50,9 @@ h2{
 h3{
   font-size: 20px;
 }
-
+ul{
+  list-style: none;
+}
 
 
 /*classes*/
@@ -119,14 +121,29 @@ h3{
 
 
 .menu{
-  position: fixed;
+  position: absolute;
+  background-color: grey;
+  animation-duration: 1s;
+  animation-name: slidein;
 }
 .menuContainer{
   filter: none;
+  width: 100px;
 }
 
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }

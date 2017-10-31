@@ -1,20 +1,45 @@
 import React, { Component } from 'react';
 // import { slide as Menu } from 'react-burger-menu'
 
-
-class Menu extends Component{
+class MenuCategories extends Component{
     constructor(){
         super();
-        this.state={
+        this.state = {
 
         }
     }
 
     render(){
+        console.log('menu categories');
+        console.log(this.props.categories)
+        return(
+            <ul>
+                {this.props.categories.map(function(category){
+                    return (<li>{category}</li>)
+                })}
+            </ul>
+        )
+    }
+}
+
+
+class Menu extends Component{
+    constructor(){
+        super();
+        this.state = {
+
+        }
+    }
+
+
+    render(){
+
         if(this.props.show){
+            console.log('menu');
+            console.log(this.props.categories)
             return(
                 <div className='menu'>   
-                    test
+                    <MenuCategories categories={this.props.categories} />
                 </div>
             )
         }
@@ -55,10 +80,12 @@ class MenuContainer extends Component{
 
 
     render(){
+        console.log('menucontainer');
+        console.log(this.props.categories)
         return(
             <div className='menuContainer'>
                 <i onClick={(e) => {this.handleMenu(e)}} className="fa fa-bars fa-2x" aria-hidden="true"></i> 
-                {<Menu show={this.state.show}/>}
+                {<Menu show={this.state.show} categories={this.props.categories}/>}
             </div>
             
         )

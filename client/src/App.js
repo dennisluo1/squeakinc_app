@@ -37,7 +37,7 @@ class App extends Component {
                 <h1>SQUEAK</h1>
                 <h1>Inc.</h1>
             </div>
-            <MenuContainer/>
+            <MenuContainer categories={['Home', 'About us', 'Projects']}/>
         </header>
 
 
