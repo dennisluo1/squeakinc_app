@@ -17,16 +17,36 @@ class Home extends Component{
             <div>
                 <section className='heroSection'>
                     <div className='serviceIcons top'>
-                        <i class="fa fa-cloud-upload fa-5x serviceIcon" aria-hidden="true"></i>
+                        <div className='outerIconContainer'>
+                            <div className='innerIconContainer'>
+                                <i class="fa fa-cloud-upload fa-5x serviceIcon" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                     <div className='serviceIcons midtop'>
-                        <i class="fa fa-cubes fa-5x serviceIcon" aria-hidden="true"></i>
-                        <i class="fa fa-check-square fa-5x serviceIcon" aria-hidden="true"></i>
+                        <div className='outerIconContainer'>
+                            <div className='innerIconContainer'>
+                                <i class="fa fa-cubes fa-5x serviceIcon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div className='outerIconContainer'>
+                            <div className='innerIconContainer'>
+                                <i class="fa fa-check-square fa-5x serviceIcon" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                     <i class="fa fa-desktop computerIcon" aria-hidden="true"></i>
                     <div className='serviceIcons midbot'>
-                        <i class="fa fa-first-order fa-5x serviceIcon" aria-hidden="true"></i>
-                        <i class="fa fa-list-alt fa-5x serviceIcon" aria-hidden="true"></i>
+                        <div className='outerIconContainer'>
+                            <div className='innerIconContainer'>
+                                <i class="fa fa-first-order fa-5x serviceIcon" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div className='outerIconContainer'>
+                            <div className='innerIconContainer'>
+                                <i class="fa fa-list-alt fa-5x serviceIcon" aria-hidden="true"></i>
+                            </div>
+                        </div>
                     </div>
                     <div className='bot'>
                         <h2>Hello There!</h2>

@@ -94,8 +94,9 @@ ul{
 }
 .heroSection{
   width: 100vw;
-  height: 80vh;
+  /* height: 100vh; */
   background-color: #2B2523;
+  color: white;
 }
 
 
@@ -127,7 +128,7 @@ ul{
 
 .menu{
   position: absolute;
-  background-color: #F9EEB3;
+  background-color: #FFDBD8;
   animation-duration: 1s;
   animation-name: slidein;
   text-align: center;
@@ -140,16 +141,32 @@ ul{
 
 .footerDivider{
   width: 90vw; 
-  height: 4px;
+  height: 6px;
   background-color: grey;
-  margin: 20px 0 20px 0;    
+  margin: 20px 0 20px 0;   
+  border-radius: 25%; 
 }
 
 .category:hover{
-  background-color: #f2efc7;
+  background-color: #FCFCFC;
 }
 
 
+.serviceIcons.top{
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+}
 .serviceIcons.midtop{
   justify-content: space-around;
   align-items: center;
@@ -181,23 +198,30 @@ ul{
   order: auto;
 }
 .serviceIcons{
-  color: white;
-  animation-duration: 2s;
-  animation-duration: infinite;
-  animation-name: growAndShrink;
 }
 .serviceIcon:hover{
-  font-size: 8em;
+  font-size: 10vw;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   animation-name: growAndShrink;
 }
 .computerIcon{
-  color: white;
-  font-size: 10em;
+  font-size: 20vw;
 }
 .serviceIcon{
   position: relative;
+  font-size: 10vw;
+}
+.innerIconContainer{
+  height:0;
+  width: 0;
+  overflow-x:visible;
+  overflow-y:visible;
+  
+}
+.outerIconContainer{
+  height: 10vw;
+  width: 10vw;
 }
 
 
