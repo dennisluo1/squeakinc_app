@@ -44,8 +44,13 @@ class App extends Component {
         <Router>
         <div className="App">
         
-          
+          {/* routes */}
           <Route exact path="/" render={ () => <Home handleRedirect={this.handleRedirect}/>}/>
+
+
+
+
+          
           <footer>
             <h2>SQUEAK Inc.</h2>
             <div className='contactIcons'>

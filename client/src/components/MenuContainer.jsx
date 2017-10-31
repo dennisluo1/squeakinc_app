@@ -56,18 +56,18 @@ class MenuContainer extends Component{
 
     toggleHTMLBackground = () => {
         let app = document.querySelector('.App');
-        let body=document.querySelector('body')
+        let body = document.querySelector('body')
         console.log(app.style.backgroundColor)
         if(!app.style.filter){
             // html.style.backgroundColor = 'rgba(128, 128, 128, .8)'
             app.style.filter= 'blur(5px)'
-            body.addEventListener('onClick', this.toggleHTMLBackground)
-            console.log('added event')
+            // body.addEventListener('onClick', this.toggleHTMLBackground)
+            // console.log('added event')
         }
         else{
             app.style.filter=''
-            body.removeEventListener('onClick', this.toggleHTMLBackground, false)
-            console.log('removed event')
+            // body.removeEventListener('onClick', this.toggleHTMLBackground, false)
+            // console.log('removed event')
         }
         
     }

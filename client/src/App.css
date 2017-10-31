@@ -95,6 +95,7 @@ ul{
 .heroSection{
   width: 100vw;
   height: 80vh;
+  background-color: #2B2523;
 }
 
 
@@ -126,7 +127,7 @@ ul{
 
 .menu{
   position: absolute;
-  background-color: #d2bba0;
+  background-color: #F9EEB3;
   animation-duration: 1s;
   animation-name: slidein;
   text-align: center;
@@ -149,6 +150,57 @@ ul{
 }
 
 
+.serviceIcons.midtop{
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+}
+.serviceIcons.midbot{
+  justify-content: space-around;
+  align-items: center;
+    
+  align-content: auto;
+	align-self: auto;
+	display: flex;
+	flex-basis: auto;
+	flex-direction: row;
+	flex-flow: auto;
+	flex-grow: auto;
+	flex-shrink: auto;
+	flex-wrap: auto;
+  order: auto;
+}
+.serviceIcons{
+  color: white;
+  animation-duration: 2s;
+  animation-duration: infinite;
+  animation-name: growAndShrink;
+}
+.serviceIcon:hover{
+  font-size: 8em;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: growAndShrink;
+}
+.computerIcon{
+  color: white;
+  font-size: 10em;
+}
+.serviceIcon{
+  position: relative;
+}
+
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -162,5 +214,17 @@ ul{
 
   to {
     margin-left: 0%;
+  }
+}
+
+@keyframes growAndShrink{
+  0%{
+    font-size: 5em;
+  }
+  50%{
+    font-size: 10em;
+  }
+  100%{
+    font-size: 5em;
   }
 }
