@@ -85,7 +85,7 @@ class MenuContainer extends Component{
     render(){
         return(
             <div className='menuContainer'>
-                <i onClick={(e) => {this.handleMenu(e)}} className="fa fa-bars fa-2x" aria-hidden="true"></i> 
+                <i onClick={(e) => {this.handleMenu(e)}} className="fa fa-bars fa-3x" aria-hidden="true"></i> 
                 {<Menu show={this.state.show} categories={this.props.categories}/>}
             </div>
             

@@ -1,7 +1,8 @@
 /*tags*/
 
 html{
-  
+  font-family: sans-serif;
+  width: 100vw;
 }
 header{
   justify-content: space-around;
@@ -45,13 +46,13 @@ footer{
 
 
 h1{
-  font-size: 30px;
+  font-size: 2em;
 }
 h2{
-  font-size: 25px;
+  font-size: 1.5em;
 }
 h3{
-  font-size: 20px;
+  font-size: 1em;
 }
 ul{
   list-style: none;
@@ -101,8 +102,8 @@ ul{
 
 
 .logo{
-  width: 100px;
-  height: 100px;
+  width: 30vw;
+  height: 30vw;
 }
 
 .contactIcons{
@@ -243,12 +244,12 @@ ul{
 
 @keyframes growAndShrink{
   0%{
-    font-size: 5em;
+    font-size: 10vw;
   }
   50%{
-    font-size: 10em;
+    font-size: 5vw;
   }
   100%{
-    font-size: 5em;
+    font-size: 10vw;
   }
 }

@@ -52,7 +52,7 @@ class App extends Component {
 
           
           <footer>
-            <h2>SQUEAK Inc.</h2>
+            <h3>SQUEAK Inc.</h3>
             <div className='contactIcons'>
               <i className="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
               <i className="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
@@ -60,8 +60,8 @@ class App extends Component {
               <i className="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
             </div>
             <div className='footerDivider'/>
-            <h2>Privacy</h2>
-            <h2>Contact</h2>
+            <h3>Privacy</h3>
+            <h3>Contact</h3>
           </footer>
         </div>
       </Router>
